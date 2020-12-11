@@ -6,10 +6,7 @@ The source directory has all ipython scripts for the assignment.
 $ cd source
 ```
 
-## Python Version
-* Python 3.7
-
-Contents:
+## Contents:
 
 * gender_preprocessing.ipynb : for preprocessing of dataset and generate pkl files
  
@@ -33,33 +30,46 @@ Contents:
 All the results of all tasks are located in their respective folders after running the code.
 
 ## Required Libraries
-tensorflow==2.x
-numpy
-pickle5
-math
-sklearn
-tqdm
-pandas
-PIL
+- tensorflow==2.x
+- numpy
+- pickle5
+- math
+- sklearn
+- tqdm
+- pandas
+- PIL
 
 ## Usage Guide
 #### Data Preprocessing
 1. Download the dataset from https://talhassner.github.io/home/projects/Adience/Adience-data.html
 
-2. On your local machine, place the gender_preprocessing.ipynb and dataset in the following folder structure:
-
+2. On your local machine, place the gender_preprocessing.ipynb and dataset in the following folder tree structure:
+```
+* root
+  |
+  |
   * gender_preprocessing.ipynb
-
-  * Folds 
-    * original_txt_files : folder containing the txt labels from the above website
-    * train_test_splitted: folder contain intermediate .csv from the preprocessing preprocessing
-
+  |
+  |
+  * Folds
+    | 
+    * original_txt_files : folder containing the txt labels from the 
+    | above website
+    | 
+    * train_test_splitted: folder contain intermediate .csv from the     
+    |  preprocessing preprocessing
+    |
+  |
+  | 
   * Adience
+    |
     * aligned : folder of images downloaded from the above dataset
-
+  |
+  |
   * serialized
+    |
     * gender : folder containing the preprocessed pickle file serialized.
-
+```
 3. If the script fail to run, make sure you create the folders if they did not exist. 
 
 Running this notebook should produce the train, test, train subset and test set for cross-validation and optimal model training
