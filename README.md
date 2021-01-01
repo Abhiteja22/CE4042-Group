@@ -1,5 +1,12 @@
 # CZ/CE4042-NN&DL-Group Project
 
+This repository documents the source code for my NNDL group project, together with [shiheng7](https://github.com/shiheng7) and [calvin7729](https://github.com/calvin7229) as part of the assessment for the coursework of CZ4042: Neural Network and Deep Learning at NTUsg.
+
+The project task is gender classification and involves the following tasks:
+- Implement the paper by [Levi and Hassner](https://talhassner.github.io/home/publication/2015_CVPR)
+- Finetuning the model introduced by them.
+- Transfer learning with top-notch pretrained network.
+
 ## Running Directory
 The source directory has all ipython scripts for the assignment. 
 ```
